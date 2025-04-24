@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #FFD700, #C0C0C0);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header img {
+    transition: transform 0.3s;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+/* Main Section */
+#main {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Countdown */
+#timer {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: #FFD700;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    border: 10px solid transparent;
+}
+
+.timeline-item.left .timeline-content::before {
+    right: -20px;
+    border-left-color: #fff;
+}
+
+.timeline-item.right .timeline-content::before {
+    left: -20px;
+    border-right-color: #fff;
+}
+
+/* Gallery */
+.swiper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.swiper-slide img {
+    border-radius: 10px;
+}
+
+/* Contact Form */
+#main .btn {
+    background: #FFD700;
+    border: none;
+    color: #000;
+}
+
+#main .btn:hover {
+    background: #C0C0C0;
+}
+
+/* Footer */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header img {
+        width: 150px;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item.right {
+        left: 0;
+    }
+
+    .timeline-item.right .timeline-content::before,
+    .timeline-item.left .timeline-content::before {
+        left: -20px;
+        border-right-color: #fff;
+        border-left-color: transparent;
+    }
+}
