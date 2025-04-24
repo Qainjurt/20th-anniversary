@@ -23,6 +23,16 @@ header img:hover {
     transform: scale(1.1);
 }
 
+/* Audio Control Button */
+#audio-control {
+    background: #343a40;
+    border: none;
+}
+
+#audio-control:hover {
+    background: #495057;
+}
+
 /* Main Section */
 #main {
     background: #fff;
