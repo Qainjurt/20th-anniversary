@@ -35,3 +35,17 @@ const swiper = new Swiper('.swiper', {
         delay: 3000,
     },
 });
+
+// Audio Control
+const audio = document.getElementById('background-audio');
+const audioControl = document.getElementById('audio-control');
+
+audioControl.addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+        audioControl.textContent = 'Музыканы тоқтату';
+    } else {
+        audio.pause();
+        audioControl.textContent = 'Музыканы ойнату';
+    }
+});
