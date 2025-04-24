@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Компанияның 20 жылдық мерейтойы - тарих, жетістіктер және іс-шаралар">
+    <meta name="keywords" content="20 жылдық, мерейтой, компания атауы">
+    <title>20 Жылдық Мерейтой</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-center py-5">
+        <img src="images/logo.png" alt="20 Жылдық Логотип" width="200" class="mb-3">
+        <h1>20 Жылдық Мерейтой</h1>
+        <p class="lead">Бірге жеткен жетістіктер!</p>
+    </header>
+
+    <!-- Main Section -->
+    <section id="main" class="container my-5">
+        <!-- Countdown Timer -->
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2>Мерейтойға дейін</h2>
+            <div id="timer" class="fs-3"></div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="mb-5" data-aos="fade-up">
+            <h2 class="text-center">Біздің тарихымыз</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2005</h3>
+                        <p>Компания құрылды</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2010</h3>
+                        <p>Алғашқы ірі жоба аяқталды</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2020</h3>
+                        <p>Халықаралық нарыққа шықты</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events -->
+        <div class="mb-5" data-aos="fade-up">
+            <h2 class="text-center">Іс-шаралар</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Мерейтойлық кеш</h3>
+                    <p><strong>Күні:</strong> 2025 жыл, 1 мамыр</p>
+                    <p><strong>Орны:</strong> Алматы, Орталық мәдениет сарайы</p>
+                    <p><strong>Уақыты:</strong> 18:00</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Қайырымдылық шарасы</h3>
+                    <p><strong>Күні:</strong> 2025 жыл, 2 мамыр</p>
+                    <p><strong>Орны:</strong> Алматы, саябақ</p>
+                    <p><strong>Уақыты:</strong> 10:00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="mb-5" data-aos="fade-up">
+            <h2 class="text-center">Галерея</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/photo1.jpg" alt="Photo 1" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="images/photo2.jpg" alt="Photo 2" class="img-fluid"></div>
+                    <div class="swiper-slide"><img src="images/photo3.jpg" alt="Photo 3" class="img-fluid"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div data-aos="fade-up">
+            <h2 class="text-center">Байланыс</h2>
+            <form action="mailto:info@company.kz" method="post" enctype="text/plain" class="mx-auto" style="max-width: 500px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Аты-жөніңіз</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Хабарлама</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Жіберу</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>Байланыс: <a href="mailto:info@company.kz" class="text-white">info@company.kz</a></p>
+        <p>© 2025 20 Жылдық</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
